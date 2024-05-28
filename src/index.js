@@ -1,1 +1,4 @@
-console.log("Hello, Webpack and Babel!"); // Log a message to the console
+import "./style.css";
+
+console.log("heyo");
+console.log("brother");

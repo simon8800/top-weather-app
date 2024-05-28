@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather This</title>
-</head>
-<body>
-    <div id="app"></div> <!-- This div will be the mounting point for our application -->
-</body>
+  </head>
+  <body>
+    <div id="app">
+      <div class="row nb-container row header"><h2>Search</h2><h2>C/F</h2></div>
+      <div class="row nb-container main">
+        <div class="nb-container grow left column">
+          <div class="row current">
+            <div class="current">
+              <h2 class="current-location">City, Country</h2>
+            </div>
+            <div class="current">
+              <h2 class="current-time">Date, Time</h2>
+            </div>
+          </div>
+
+          <div class="row current">
+            <div class="current">
+              <p class="current-weather__icon">Weather Icon</p>
+              <p class="current-weather">Weather Condition</p>
+            </div>
+            <div><p class="current-temperature">Temperature</p></div>
+          </div>
+
+          <div class="row current">
+            <div class="weather-element wind">
+                <h3>Wind</h3>
+            </div>
+            <div class="weather-element humidity">
+                <h3>Humidity</h3>
+            </div>
+          </div>
+
+          <div class="row current">
+            <div class="weather-element feels-like">
+                <h3>Feels Like</h3>
+            </div>
+            <div class="weather-element wind-direction">
+                <h3>Wind Direction</h3>
+            </div>
+          </div>
+
+          <div class="row current">
+            <div class="weather-element pressure">
+                <h3>Pressure</h3>
+            </div>
+            <div class="weather-element uv-index">
+                <h3>UV Index</h3>
+            </div>
+          </div>
+
+        <div class="row current">
+            <div class="weather-element precipitation">
+                <h3>Precipitation</h3>
+            </div>
+            <div class="weather-element high-low">
+                <h3>High/Low</h3>
+            </div>
+        </div>
+
+        </div>
+        
+        <div class="nb-container grow right column">
+          <div class="hourly">
+            <h2>Hourly Forecast</h2>
+            <p>12:00 Condition Temp</p>
+            <p>13:00 Condition Temp</p>
+            <p>14:00 Condition Temp</p>
+            <p>15:00 Condition Temp</p>
+            <p>16:00 Condition Temp</p>
+            <p>17:00 Condition Temp</p>
+            <p>18:00 Condition Temp</p>
+          </div>
+          <div class="three-day">
+            <h2>Three Day Forecast</h2>
+            <p>Tomorrow1 Condition High/Low</p>
+            <p>Tomorrow1 Condition High/Low</p>
+            <p>Tomorrow1 Condition High/Low</p>
+          </div>
+          <div class="popular">
+            <h2>Popular Cities</h2>
+            <p>Amsterdam Condition CurrentTemp</p>
+            <p>London Condition CurrentTemp</p>
+            <p>Dubai Condition CurrentTemp</p>
+            <p>Hong Kong Condition CurrentTemp</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- This div will be the mounting point for our application -->
+  </body>
 </html>
