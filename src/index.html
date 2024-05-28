@@ -7,7 +7,10 @@
   </head>
   <body>
     <div id="app">
-      <div class="row nb-container row header"><h2>Search</h2><h2>C/F</h2></div>
+      <div class="row nb-container row header">
+        <input type="text" name="search" id="search" placeholder="Enter a zipcode or city">
+        <h2>C/F</h2>
+      </div>
       <div class="row nb-container main">
         <div class="nb-container grow left column">
           <div class="row current">
@@ -21,7 +24,7 @@
 
           <div class="row current">
             <div class="current">
-              <p class="current-weather__icon">Weather Icon</p>
+              <p class="current-weather__icon"><i></i>Weather Icon</p>
               <p class="current-weather">Weather Condition</p>
             </div>
             <div><p class="current-temperature">Temperature</p></div>
@@ -29,42 +32,42 @@
 
           <div class="row current">
             <div class="weather-element wind">
-                <h3>Wind</h3>
+                <h3>Wind</h3><div class="icon i-wind"></div>
             </div>
             <div class="weather-element humidity">
-                <h3>Humidity</h3>
+                <h3>Humidity</h3><div class="icon i-droplet"></div>
             </div>
           </div>
 
           <div class="row current">
             <div class="weather-element feels-like">
-                <h3>Feels Like</h3>
+                <h3>Feels Like</h3><div class="icon i-thermometer"></div>
             </div>
             <div class="weather-element wind-direction">
-                <h3>Wind Direction</h3>
+                <h3>Wind Direction</h3><div class="icon i-compass"></div>
             </div>
           </div>
 
           <div class="row current">
             <div class="weather-element pressure">
-                <h3>Pressure</h3>
+                <h3>Pressure</h3><div class="icon i-minimize"></div>
             </div>
             <div class="weather-element uv-index">
-                <h3>UV Index</h3>
+                <h3>UV Index</h3><div class="icon i-sun"></div>
             </div>
           </div>
 
         <div class="row current">
             <div class="weather-element precipitation">
-                <h3>Precipitation</h3>
+                <h3>Precipitation</h3><div class="icon i-cloud-drizzle"></div>
             </div>
             <div class="weather-element high-low">
-                <h3>High/Low</h3>
+                <h3>High/Low</h3><div class="icon i-maximize"></div>
             </div>
         </div>
 
         </div>
-        
+
         <div class="nb-container grow right column">
           <div class="hourly">
             <h2>Hourly Forecast</h2>
@@ -91,7 +94,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- This div will be the mounting point for our application -->
+      <div class="icon-container">
+        <div class="icon cloud"></div>
+      </div>
+    </div> <!-- This div will be the mounting point for our application -->
   </body>
 </html>
