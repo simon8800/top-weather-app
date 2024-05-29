@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#app {
+  background-color: #daf5f0;
+  min-height: 98.25vh;
+  padding: 1rem;
+  padding-bottom: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  flex: auto;
+  gap: 1.5rem;
+}
+
+.weather-element-container {
+  display: grid;
+  grid-template-columns: autofit();
+  grid-auto-rows: auto;
+  gap: 2rem;
+}
+
+img {
+  width: 55px;
+  height: auto;
+}
+
+.current-weather {
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header {
+  flex-grow: 0;
+}
+
+.main {
+  flex: 1;
+}
+
+.nb-container {
+  padding: 1rem;
+  border: 3px solid black;
+  border-radius: 0.6rem;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.65);
+  margin-bottom: 1rem;
+}
+
+.grow {
+  flex: 1;
+}
+
+input[type="text"] {
+  border-style: none;
+  border: 3px solid black;
+  border-radius: 0.6rem;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.65);
+  height: 2rem;
+  width: clamp(10rem, 50%, 20vw);
+  outline: none;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#submit {
+  border-style: none;
+  border: 3px solid black;
+  border-radius: 0.6rem;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.65);
+  height: 2rem;
+  width: 5rem;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  border: 3px solid #ff6b6b;
+}
+
+.weather-element {
+  text-align: center;
+}
+
+.row.current {
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.scale-btn {
+  border-style: none;
+  border: 3px solid black;
+  border-radius: 0.6rem;
+  box-shadow: 2px 4px rgba(0,0,0,0.65);
+  height: 2rem;
+  width: 2.5rem;
+  background-color: #B5D2AD;
+  font-weight: bold;
+}
+
+/* ALL ICONS STUFF */
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.i-cloud {
+  background: url("./assets/cloud.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-cloud-drizzle {
+  background: url("./assets/cloud-drizzle.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-cloud-lightning {
+  background: url("./assets/cloud-lightning.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-cloud-rain {
+  background: url("./assets/cloud-rain.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-cloud-snow {
+  background: url("./assets/cloud-snow.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-compass {
+  background: url("./assets/compass.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-droplet {
+  background: url("./assets/droplet.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-eye {
+  background: url("./assets/eye.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-compass {
+  background: url("./assets/compass.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-maximize {
+  background: url("./assets/maximize-2.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-minimize {
+  background: url("./assets/minimize-2.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-moon {
+  background: url("./assets/moon.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-sun {
+  background: url("./assets/sun.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-sunrise {
+  background: url("./assets/sunrise.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-sunset {
+  background: url("./assets/sunset.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-thermometer {
+  background: url("./assets/thermometer.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.i-wind {
+  background: url("./assets/wind.svg") no-repeat center center;
+  background-size: contain;
+}
