@@ -8,95 +8,107 @@
   <body>
     <div id="app">
       <div class="row nb-container row header">
-        <input type="text" name="search" id="search" placeholder="Enter a zipcode or city">
-        <h2>C/F</h2>
+        <div>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Enter a zipcode or city"
+          />
+          <input id="submit" type="submit" value="search">
+        </div>
+        <button class="scale-btn" value="f">°F</button>
       </div>
-      <div class="row nb-container main">
-        <div class="nb-container grow left column">
-          <div class="row current">
-            <div class="current">
-              <h2 class="current-location">City, Country</h2>
-            </div>
-            <div class="current">
-              <h2 class="current-time">Date, Time</h2>
-            </div>
-          </div>
-
-          <div class="row current">
-            <div class="current">
-              <p class="current-weather__icon"><i></i>Weather Icon</p>
-              <p class="current-weather">Weather Condition</p>
-            </div>
-            <div><p class="current-temperature">Temperature</p></div>
-          </div>
-
-          <div class="row current">
-            <div class="weather-element wind">
-                <h3>Wind</h3><div class="icon i-wind"></div>
-            </div>
-            <div class="weather-element humidity">
-                <h3>Humidity</h3><div class="icon i-droplet"></div>
-            </div>
-          </div>
-
-          <div class="row current">
-            <div class="weather-element feels-like">
-                <h3>Feels Like</h3><div class="icon i-thermometer"></div>
-            </div>
-            <div class="weather-element wind-direction">
-                <h3>Wind Direction</h3><div class="icon i-compass"></div>
-            </div>
-          </div>
-
-          <div class="row current">
-            <div class="weather-element pressure">
-                <h3>Pressure</h3><div class="icon i-minimize"></div>
-            </div>
-            <div class="weather-element uv-index">
-                <h3>UV Index</h3><div class="icon i-sun"></div>
-            </div>
-          </div>
-
+      <div class="nb-container grow left column">
         <div class="row current">
-            <div class="weather-element precipitation">
-                <h3>Precipitation</h3><div class="icon i-cloud-drizzle"></div>
+          <div class="current">
+            <h2 class="current-location">City, Country</h2>
+            <div class="current-weather">
+              <div class="weather-icon"></div>
+              <p class="weather-condition">Weather Condition</p>
             </div>
-            <div class="weather-element high-low">
-                <h3>High/Low</h3><div class="icon i-maximize"></div>
+          </div>
+          <div class="current">
+            <h2 class="current-time">Date, Time</h2>
+            <div class="current-weather">
+              <p class="current-temperature">Temperature</p>
             </div>
+          </div>
         </div>
 
-        </div>
+        <div class="weather-element-container grow">
+          <div class="weather-element wind">
+            <div class="row">
+              <h3>Wind</h3>
+              <div class="icon i-wind"></div>
+              <p class="wind-value"></p>
+            </div>
+          </div>
+          <!-- end of wind -->
+          <div class="weather-element humidity">
+            <div class="row">
+              <h3>Humidity</h3>
+              <div class="icon i-droplet"></div>
+              <p class="humidity-value"></p>
+            </div>
+          </div>
+          <!-- end of humidity -->
 
-        <div class="nb-container grow right column">
-          <div class="hourly">
-            <h2>Hourly Forecast</h2>
-            <p>12:00 Condition Temp</p>
-            <p>13:00 Condition Temp</p>
-            <p>14:00 Condition Temp</p>
-            <p>15:00 Condition Temp</p>
-            <p>16:00 Condition Temp</p>
-            <p>17:00 Condition Temp</p>
-            <p>18:00 Condition Temp</p>
+          <div class="weather-element feels-like">
+            <div class="row">
+              <h3>Feels Like</h3>
+              <div class="icon i-thermometer"></div>
+              <p class="feels-like-value"></p>
+            </div>
           </div>
-          <div class="three-day">
-            <h2>Three Day Forecast</h2>
-            <p>Tomorrow1 Condition High/Low</p>
-            <p>Tomorrow1 Condition High/Low</p>
-            <p>Tomorrow1 Condition High/Low</p>
+          <!-- end of feels like -->
+          <div class="weather-element wind-direction">
+            <div class="row">
+              <h3>Wind Direction</h3>
+              <div class="icon i-compass"></div>
+              <p class="wind-direction-value"></p>
+            </div>
           </div>
-          <div class="popular">
-            <h2>Popular Cities</h2>
-            <p>Amsterdam Condition CurrentTemp</p>
-            <p>London Condition CurrentTemp</p>
-            <p>Dubai Condition CurrentTemp</p>
-            <p>Hong Kong Condition CurrentTemp</p>
+          <!-- end of wind-dir -->
+
+          <div class="weather-element pressure">
+            <div class="row">
+              <h3>Pressure</h3>
+              <div class="icon i-minimize"></div>
+              <p class="pressure-value"></p>
+            </div>
           </div>
+          <!-- end of pressure -->
+          <div class="weather-element uv-index">
+            <div class="row">
+              <h3>UV Index</h3>
+              <div class="icon i-sun"></div>
+              <p class="uv-index-value"></p>
+            </div>
+          </div>
+          <!-- end of uv -->
+
+          <div class="weather-element precipitation">
+            <div class="row">
+              <h3>Precipitation</h3>
+              <div class="icon i-cloud-drizzle"></div>
+              <p class="precipitation-value"></p>
+            </div>
+          </div>
+          <!-- end of precipitation -->
+          <div class="weather-element high-low">
+            <div class="row">
+              <h3>High/Low</h3>
+              <div class="icon i-maximize"></div>
+              <p class="high-low-value"></p>
+            </div>
+          </div> 
+          <!-- end of high/low -->
         </div>
+        <!-- end of weather-element-container -->
       </div>
-      <div class="icon-container">
-        <div class="icon cloud"></div>
-      </div>
-    </div> <!-- This div will be the mounting point for our application -->
+      <!-- end of left container -->
+    </div>
+    <!-- This div will be the mounting point for our application -->
   </body>
 </html>
