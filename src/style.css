@@ -70,7 +70,7 @@ img {
   flex: 1;
 }
 
-input[type="text"] {
+#search {
   border-style: none;
   border: 3px solid black;
   border-radius: 0.6rem;
@@ -95,7 +95,7 @@ input[type="text"] {
   text-align: center;
 }
 
-input[type="text"]:focus {
+#search:focus {
   border: 3px solid #ff6b6b;
 }
 
